@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="AnyStore.exe" version="1.0.0.0" publicKeyToken="b79d659a0c535fe0" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="AnyStore" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="AnyStore.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AnyStore.exe" size="42480">
+      <assemblyIdentity name="AnyStore" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>KOv3XuIg0tNJL7JxLdMxB/5vdQyqkQ29w6DiGGOF6Ys=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="AnyStore.exe.config" size="425">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>r2CMz6ag0KTrcRjF4YEhnLCLmda/+LPyLvktRsYUx9k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DB\DatabaseUser.mdf" size="3276800" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kUvaWzv2tzmRv8m6Y1krGZM0uAu4/QjCy8m8WF0Uipk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DB\DatabaseUser_log.ldf" size="1638400" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>upjq67ualFm7UnOvkEiwAsxJNpDGrRDpjcOEzJso8jE=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-FKRS026\Thushal" issuerKeyHash="b296492f6c226b6d4d5af477789e55ad5a6a5fad" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>tuzhjAtfXovUvnFIEPMuwO3HAOkulJRV7Ll/b0EdufM=</DigestValue></Reference></SignedInfo><SignatureValue>cWwhpl98JCGmqfKG20IM5owR1qdeJgxWYPCKfF5a231sCuNIUVn+qVG7ZMMwJlPeDIl9jvzvkOOCYjP9xbdhaOcoDupRSWVzHd53hgzRSBrayqcdd85g+5ZQEGy8RweF4VFIfLfzqXi4jllfQwgEzdaBTThyVFBfhB+zliazYF8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>ufUwuiPuo7Z2ytQmBNw9rTCL7MiRYSF+LZJRudgClv3AJYPafsNhulE74C8xonaY7JOGxmnyTQg8/RSqiYrJ/sAf+XjtrGsWa5+tVKU7AMZ2w39dzj0nvsNB+zXKXt3jFmnIE8ZHLUEymhXTJp33TUie812IsYcX8Qw6zKoUr1k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="f3b91d416f7fb9ec5594942ee900c7edc02ef3104871bed48b5e5f0b8ce1ecb6" Description="" Url=""><as:assemblyIdentity name="AnyStore.exe" version="1.0.0.0" publicKeyToken="b79d659a0c535fe0" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-FKRS026\Thushal</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>XIco9L99yENv1J3Icf8T+RR1sZFuLjlj6z4HX0XqskQ=</DigestValue></Reference></SignedInfo><SignatureValue>RXZOYu7Q9AmtBMQWkSmsnAwDEKhlmZhs84Mls9YFsySVJByJ6y7pQ5hCyTowBaegeDzbcQBPyNPmKkZDIMV22OGNvBD0oVCHirbVnQ3ewiDeB4eeRI+6EbHoyrO8s3xiZOzJ09oQKXan4/aHzAIFtUgyn71H/Xv3MB9D4spGhBk=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>ufUwuiPuo7Z2ytQmBNw9rTCL7MiRYSF+LZJRudgClv3AJYPafsNhulE74C8xonaY7JOGxmnyTQg8/RSqiYrJ/sAf+XjtrGsWa5+tVKU7AMZ2w39dzj0nvsNB+zXKXt3jFmnIE8ZHLUEymhXTJp33TUie812IsYcX8Qw6zKoUr1k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB9TCCAV6gAwIBAgIQd4jE8VdPiKxBlUXrSnWNtTANBgkqhkiG9w0BAQsFADA5MTcwNQYDVQQDHi4ARABFAFMASwBUAE8AUAAtAEYASwBSAFMAMAAyADYAXABUAGgAdQBzAGgAYQBsMB4XDTE5MDYwNDE3MDIzMVoXDTIwMDYwMzIzMDIzMVowOTE3MDUGA1UEAx4uAEQARQBTAEsAVABPAFAALQBGAEsAUgBTADAAMgA2AFwAVABoAHUAcwBoAGEAbDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAufUwuiPuo7Z2ytQmBNw9rTCL7MiRYSF+LZJRudgClv3AJYPafsNhulE74C8xonaY7JOGxmnyTQg8/RSqiYrJ/sAf+XjtrGsWa5+tVKU7AMZ2w39dzj0nvsNB+zXKXt3jFmnIE8ZHLUEymhXTJp33TUie812IsYcX8Qw6zKoUr1kCAwEAATANBgkqhkiG9w0BAQsFAAOBgQC3PWZsfj5Gm3NhMaUi6U0lwz2ByJzLSpZ1BcBwcxGAOMGGiSkdeW6Q9jBzZ7RdYwoEgUyWw4R6hKnODbMlYVrwjGjHlCJhLmh0cIprviKdOSLmxp95H0guYU859vQk3SJGADyn9n0Ei9d5EjkKW2jppb7b0JLqSiQimS94ED2TIg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
